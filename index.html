@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/pinha-icon.png" type="image/x-icon">
+    <title>Aerocária: Alertas inteligentes</title>
+</head>
+<body>
+    <header>
+        <div class="titles">
+            <img src="./assets/pinha.png" alt="Logo da Aerocária">
+            <div>
+                <h1>Aerocária</h1>
+                <h2>Sistemas de alertas inteligentes</h2>
+            </div>
+        </div>
+
+        <div class="menu">
+            <i class="material-icons" onclick="clickMenu()"><img src="./assets/menu.png" id="menu-icon" alt="menu"></i>
+            <menu id="menu-components">
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#objective">Objetivo</a></li>
+                <li><a href="#important">Importância</a></li>
+                <li><a href="#materials">Recursos</a></li>
+            </ul>        
+            </menu>
+        </div>
+    </header>
+
+    <main>
+        <div class="intro">
+            <section class="container" id="about">
+                <h2>Sobre o projeto</h2>
+                <p>
+                    Nosso projeto visa implementar um detector de enchentes com um sistema de alarmes de baixo custo em rios próximos de subúrbios e comunidades vulneráveis. Acreditamos que a prevenção é a chave para minimizar os graves e chocantes impactos das enchentes, e por isso desenvolvemos um projeto acessível que utilizará um pouquinho de tecnologia para monitorar constantemente os níveis de elevação dos rios. Além dos alarmes locais (que serão acionados quando ocorrer anormalidades) estamos planejando integrar um sistema de alerta via SMS para os moradores da região de risco, garantindo que as comunidades recebam avisos imediatos e possam agir com antecedência. 
+                </p>
+            </section>
+            <section class="container" >
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-0" src="./assets/sirene.jpg" alt="">
+                        <img id="slide-1" src="./assets/ring_alarm_smart_home_security.jpg" alt="">
+                        <img id="slide-2" src="./assets/alagado.jpeg" alt="">
+                    </div>
+
+                    <div class="slider-nav">
+                        <input type="radio" name="radio-button" id="radio0" onclick="changeUrl(0)">
+                        <input type="radio" name="radio-button" id="radio1" onclick="changeUrl(1)">
+                        <input type="radio" name="radio-button" id="radio2" onclick="changeUrl(2)">
+                    </div> 
+
+                    <div class="manual">
+                        <label for="radio0" class="manual-btn"></label>
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="content">
+            <section class="container objective" id="objective">               
+                <img src="./assets/brazil.jpg" alt="Foto de um bairro brasileiro">       
+                <div>
+                    <h2>Nosso objetivo</h2>
+                    <p>Nosso principal objetivo é prevenir alagamentos através de um sistema acessível e de baixo custo de avisos e alarmes para enchentes/anormalidades. Nosso projeto visa proteger comunidades urbanas vulneráveis, emitindo alertas precoces caso a situação se agrave, evitando assim perdas humanas, danos materiais e o sofrimento que tais eventos podem causar. Estamos comprometidos em utilizar tecnologia confiável e acessível para monitorar continuamente os riscos de enchentes, proporcionando às autoridades e aos residentes a informação necessária para tomar decisões informadas e agir com antecedência diante de potenciais desastres naturais.</p>
+                </div>                      
+            </section>
+            
+            <section class="container important" id="important">                
+                <div>
+                    <h2>Importância</h2>
+                    <p>A cada dia que se passa, as enchentes se tornam um problema maior, devido às mudanças climáticas. E, segundo o <a  class="bright-link" href="https://www.terra.com.br/noticias/brasil/cidades/so-13-das-cidades-sob-risco-tem-alerta-para-enchentes,4a64425eca1e089e948833e868eaa5b3fj04jzc3.html" target="_blank">Ministério do Desenvilvimento Regional (MDR)</a>, cerca de 2/3 das cidades vulneráveis as enchentes ainda não possuem um sistema de alarmes. Deste modo, ao investir em medidas preventivas e de infraestrutura de baixo custo como o nosso detector de enchentes, podemos promover uma resposta ágil e eficaz às pessoas em situação de vulnerabilidade e, assim, salvar vidas. 
+                    </p>
+                </div>
+                <img src="./assets/sad-parent-child.jpg" alt="Fode de mãe e filha desanimadas">              
+            </section>
+
+            <section class="container materials" id="materials">               
+                <img src="./assets/circuits.jpg" alt="Foto de um circuito">       
+                <div>
+                    <h2>Recursos</h2>
+                    <p>Os materiais que possívelmente serão utilizados:</p>
+                    <ul>
+                        <li>Eixo largo e grande;</li>
+                        <li>Cano para proteção dos componentes eletrônicos;</li>
+                        <li>Componentes eletrônicos Raspberry ou outros;</li>
+                        <li>Uma Bóia;</li>
+                        <li>Buzzer (para emitir ou não som dentro das residências) ou Sirenes;</li>
+                        <li>Ultrassom (para medir a distância da bóia);</li>
+                        <li>Bateria ou mini painel solar para a alimentação dos circuitos.</li>
+                    </ul>
+                </div>                      
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <img src="./assets/pinha.png" alt="Uma pinha">
+        <a href="https://fluentslang.com/wut-meaning/" target="_blank">@Aerocária</a>      
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

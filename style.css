@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Righteous&display=swap");
+
+:root {
+  --dark-blue: rgb(18, 73, 133);
+  --cyan: rgb(108, 181, 183);
+  --bright-blue: rgb(89, 169, 255);
+  --bright-cyan: rgb(125, 255, 240);
+  --weak-cyan: rgb(221, 239, 237);
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: linear-gradient(
+    90deg,
+    rgb(24, 93, 165),
+    rgb(125, 212, 214)
+  );
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .titles {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+header .titles img {
+  width: 8.5rem;
+}
+
+header h1 {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+}
+
+header h2 {
+  font-size: 1.75rem;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+header .menu img {
+  width: 3.75rem;
+  opacity: 0.8;
+  transition: 0.25s;
+  margin-left: 3rem;
+}
+
+header .menu i {
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+  top: 4rem;
+  right: 4rem;
+}
+
+header .menu img:hover {
+  width: 4.25rem;
+  opacity: 1;
+}
+
+menu {
+  position: fixed;
+  top: 8rem;
+  right: 8rem;
+  z-index: 1;
+  display: none;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+menu ul {
+  background-color: var(--black);
+  border-radius: 0.5rem;
+  position: absolute;
+}
+
+menu ul li {
+  padding: 0.5rem;
+  transition: .25s;
+}
+
+menu ul li:hover {
+  border-radius: 0.5rem;
+  background-color: rgb(48, 65, 65);
+}
+
+menu ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font: 1.25rem;
+}
+
+main {
+  margin: auto;
+  width: 75%;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+main .intro {
+  display: flex;
+  padding-top: 1rem;
+  background-color: var(--weak-cyan);
+}
+
+main h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 0.75rem 0;
+}
+
+main p {
+  font-size: 1.35rem;
+  line-height: 1.5rem;
+}
+
+.container {
+  padding: 1.75rem;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 42rem;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 1rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+}
+
+.slider-nav input {
+  display: none;
+}
+
+.manual {
+  position: absolute;
+  width: 100%;
+  margin-top: -3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 0.2rem solid var(--white);
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: 0.25s;
+}
+
+.manual-btn:hover {
+  background-color: var(--bright-cyan);
+  scale: 1.35;
+}
+
+.out {
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-image: linear-gradient(
+    90deg,
+    var(--bright-cyan),
+    var(--bright-blue)
+  );
+}
+
+footer img {
+  width: 4rem;
+}
+
+footer a {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  margin: 0;
+  text-decoration: none;
+  color: var(--black);
+  transition: .5s
+}
+
+footer a:hover {
+  font-size: 2.25rem;
+  color: var(--dark-blue);
+}
+
+.content {
+  color: var(--white);
+  background-image: url(./assets/drone_view_aerial_view_bridge_road_river.jpg);
+  background-size: cover;
+}
+
+.content .container {
+  display: flex;
+  align-items: center;
+}
+
+.content .container img {
+  width: 14rem;
+  height: 14rem;
+  margin: 0 1rem;
+  border-radius: 50%;
+  opacity: .75;
+  transition: .25s;
+}
+
+.content .container:hover img {
+  opacity: 1;
+}
+
+.content .container.materials ul {
+  list-style: circle;
+  margin-left: 2rem;
+  font-size: 1.35rem;
+  line-height: 1.5rem;
+}
+
+.bright-link {
+  color: var(--bright-cyan);
+}
+
+@media only screen and (max-width: 1600px) {
+  main .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .intro .slider-wrapper {
+    margin: auto;
+    max-width: 48rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    width: 100%;
+  }
+  
+  header h1 {
+    font-size: 4rem;
+  }
+  
+  header .titles img {
+    width: 6.5rem;
+  }
+
+  main h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 0 0 0.75rem 0;
+  }
+  
+  main p,  .content .container.materials ul {
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+ 
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  header h2 {
+    font-size: 1.25rem;
+  }
+
+  header .titles img {
+    width: 4.5rem;
+  }
+ 
+  .content .container {
+    display: flex;
+    flex-direction: column;   
+  }
+
+  .content .container.important {
+    flex-direction: column-reverse;  
+  }
+
+  .content .container img {
+    opacity: 1;
+  }
+
+  .manual-btn {
+    border: 0.4rem solid var(--white);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 1.25rem;
+    transition: 0.25s;
+  }
+
+  header .menu img {
+    width: 4.25rem;
+  }
+
+  header .menu i {
+    top: 2rem;
+    right: 2cqb;
+  }
+
+  menu {
+    position: fixed;
+    top: 7rem;
+    right: 10rem;
+    z-index: 1;
+  }
+
+  menu ul li {
+    padding: 1rem;
+    transition: .25s;
+  }
+
+  menu ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.15rem;
+  }
+}
