@@ -103,21 +103,22 @@
             <h2>E aí? O que achou?</h2>
             <form 
                 id="feedback"
+                onsubmit="check(event)"
                 action="https://formspree.io/f/xayreoag"
                 method="POST"
                 target="_blank"
                 >
                 <label>
                     Seu email:
-                    <input type="email" name="email">
+                    <input type="email" name="email" id="email">
                 </label>
                 <label>
                     Seu nome:
-                    <input type="text" name="text">
+                    <input type="text" name="text" id="name">
                 </label>
                 <label>
                     Seu feedback:
-                    <textarea name="message"></textarea>
+                    <textarea name="message" id="textArea"></textarea>
                 </label>
                 <button type="submit">Enviar</button>
             </form>

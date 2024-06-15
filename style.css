@@ -7,8 +7,10 @@
   --bright-cyan: rgb(125, 255, 240);
   --weak-cyan: rgb(221, 239, 237);
   --weak-blue: rgb(198, 218, 237);
+  --dead-cyan: rgb(48, 65, 65);
   --white: #fff;
   --black: #000;
+  --super-weak-black: rgba(0, 0, 0, 0.24);
 }
 
 * {
@@ -96,7 +98,7 @@ menu ul li {
 
 menu ul li:hover {
   border-radius: 0.5rem;
-  background-color: rgb(48, 65, 65);
+  background-color: var(--dead-cyan);
 }
 
 menu ul li a {
@@ -137,6 +139,8 @@ main p {
 .slider-wrapper {
   position: relative;
   max-width: 42rem;
+  box-shadow: var(--super-weak-black) 0px 3px 8px;
+  border-radius: 1rem;
 }
 
 .slider {
@@ -214,7 +218,7 @@ main p {
 }
 
 .content .container:hover img {
-  opacity: 1;
+  opacity: 1; 
 }
 
 .content .container.materials ul {
@@ -245,6 +249,7 @@ form {
   border-radius: .5rem;
   padding: 1rem;
   margin: auto;
+  box-shadow: var(--super-weak-black) 0px 3px 8px;
 } 
 
 .feedback h2 {
@@ -290,6 +295,7 @@ form button {
 form button:hover {
   border: .25rem solid var(--bright-cyan);
   scale: 1.1;
+  
 }
 
 
