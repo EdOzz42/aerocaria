@@ -26,6 +26,7 @@
                 <li><a href="#objective">Objetivo</a></li>
                 <li><a href="#important">Importância</a></li>
                 <li><a href="#materials">Recursos</a></li>
+                <li><a href="#materials">Feedback</a></li>
             </ul>        
             </menu>
         </div>
@@ -42,15 +43,15 @@
             <section class="container" >
                 <div class="slider-wrapper">
                     <div class="slider">
-                        <img id="slide-0" src="./assets/sirene.jpg" alt="">
-                        <img id="slide-1" src="./assets/ring_alarm_smart_home_security.jpg" alt="">
-                        <img id="slide-2" src="./assets/alagado.jpeg" alt="">
+                        <img id="slide-0" class="slide zero" src="./assets/detector-enchentes-16x9.jpg" alt="Detector de enchentes">
+                        <img id="slide-1" class="slide one" src="./assets/alerta-16x9.jpg" alt="Imagem com celular e casa recebendo alertas">
+                        <img id="slide-2" class="slide two" src="./assets/peace-16x9.jpg" alt="Imagem representando tranquilidade">
                     </div>
 
                     <div class="slider-nav">
                         <input type="radio" name="radio-button" id="radio0" onclick="changeUrl(0)">
                         <input type="radio" name="radio-button" id="radio1" onclick="changeUrl(1)">
-                        <input type="radio" name="radio-button" id="radio2" onclick="changeUrl(2)">
+                        <input type="radio" name="radio-button" id="radio2" onclick="changeUrl(2)"
                     </div> 
 
                     <div class="manual">
@@ -74,7 +75,7 @@
             <section class="container important" id="important">                
                 <div>
                     <h2>Importância</h2>
-                    <p>A cada dia que se passa, as enchentes se tornam um problema maior, devido às mudanças climáticas. E, segundo o <a  class="bright-link" href="https://www.terra.com.br/noticias/brasil/cidades/so-13-das-cidades-sob-risco-tem-alerta-para-enchentes,4a64425eca1e089e948833e868eaa5b3fj04jzc3.html" target="_blank">Ministério do Desenvilvimento Regional (MDR)</a>, cerca de 2/3 das cidades vulneráveis as enchentes ainda não possuem um sistema de alarmes. Deste modo, ao investir em medidas preventivas e de infraestrutura de baixo custo como o nosso detector de enchentes, podemos promover uma resposta ágil e eficaz às pessoas em situação de vulnerabilidade e, assim, salvar vidas. 
+                    <p>A cada dia que se passa, as enchentes se tornam um problema maior, devido às mudanças climáticas. E, segundo o <a  class="bright-link" href="https://www.terra.com.br/noticias/brasil/cidades/so-13-das-cidades-sob-risco-tem-alerta-para-enchentes,4a64425eca1e089e948833e868eaa5b3fj04jzc3.html" target="_blank">Ministério do Desenvolvimento Regional (MDR)</a>, cerca de 2/3 das cidades vulneráveis as enchentes ainda não possuem um sistema de alarmes. Deste modo, ao investir em medidas preventivas e de infraestrutura de baixo custo como o nosso detector de enchentes, podemos promover uma resposta ágil e eficaz às pessoas em situação de vulnerabilidade e, assim, salvar vidas. 
                     </p>
                 </div>
                 <img src="./assets/sad-parent-child.jpg" alt="Fode de mãe e filha desanimadas">              
@@ -97,11 +98,34 @@
                 </div>                      
             </section>
         </div>
+
+        <div class="feedback">
+            <h2>E ái? O que achou?</h2>
+            <form
+                action="https://formspree.io/f/xayreoag"
+                method="POST"
+                target="_blank"
+                >
+                <label>
+                    Seu email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Seu nome:
+                    <input type="text" name="text">
+                </label>
+                <label>
+                    Seu feedback:
+                    <textarea name="message"></textarea>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </main>
 
     <footer>
         <img src="./assets/pinha.png" alt="Uma pinha">
-        <a href="https://fluentslang.com/wut-meaning/" target="_blank">@Aerocária</a>      
+        <a href="https://github.com/EdOzz42/aerocaria" target="_blank">@Aerocária</a>      
     </footer>
 
     <script src="./script.js"></script>

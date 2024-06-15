@@ -11,10 +11,20 @@ function clickMenu() {
     }
 }
 
+    const mediaQuery = window.matchMedia('(max-width: 600px)')
     let slide0 = document.querySelector('#slide-0')
     let slide1 = document.querySelector('#slide-1')
     let slide2 = document.querySelector('#slide-2')
+    
 
+    if (mediaQuery.matches) {
+        // Then trigger an alert
+        alert('Media Query Matched!')
+        slide0.src =  "./assets/detector-enchentes-1x1.jpg"
+        slide1.src =  "./assets/alerta-1x1.jpg"
+        slide2.src =  "./assets/peace-1x1.jpg"      
+      }    
+    
     function changeUrl(number) {
     
     console.log(number)
@@ -36,5 +46,4 @@ function clickMenu() {
         slide2.classList.remove("out")
     }
 }
-    
 
