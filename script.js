@@ -19,16 +19,12 @@ function clickMenu() {
 
     if (mediaQuery.matches) {
         // Then trigger an alert
-        alert('Media Query Matched!')
         slide0.src =  "./assets/detector-enchentes-1x1.jpg"
         slide1.src =  "./assets/alerta-1x1.jpg"
         slide2.src =  "./assets/peace-1x1.jpg"      
       }    
     
-    function changeUrl(number) {
-    
-    console.log(number)
-    
+    function changeUrl(number) {  
     
     if(number == 0) {
         slide1.classList.add("out")
