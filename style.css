@@ -17,6 +17,10 @@
   scroll-behavior: smooth;
 }
 
+strong {
+  font-weight: bold;
+}
+
 header {
   background-image: linear-gradient(
     90deg,
@@ -129,7 +133,7 @@ main h2 {
 
 main p {
   font-size: 1.35rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
 }
 
 .container {
@@ -232,6 +236,9 @@ main p {
   color: var(--bright-cyan);
 }
 
+.bright-link:hover {
+  color: var(--bright-blue)
+}
 
 .feedback {
   background-color: var(--weak-blue);
@@ -391,7 +398,7 @@ footer a:hover {
     flex-direction: column;   
   }
 
-  .content .container.important {
+  .content .container.important, .content .container.github {
     flex-direction: column-reverse;  
   }
 
